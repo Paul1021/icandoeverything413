@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            width: 96%;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 120px;
+            background-color: #3489ff;
+        }
+        .header-text{
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+        }
+        .content{
+            float: left;
+            width: 62.5%;
+            height: 400px;
+            padding: 1.5625%;
+            background-color: #fcaeae;
+            font-size: 1.5rem;
+        }
+        .content img{
+            max-width: 100%;
+            height: auto;
+        }
+        .right-side{
+            float: right;
+            width: 31.25%;
+            height: 400px;
+            padding: 1.5625%;
+            background-color: #64fcc1;
+            font-size: 1.5rem;
+        }
+        footer{
+            clear:both;
+            width: 100%;
+            height: 120px;
+            background-color: #fcba64;
+            font-size: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 class="header-text">고정 그리드 레이아웃</h1>
+        </header>
+        <section class="content">
+            <h4>본문</h4>
+            <img src="img3.jpg">
+            <img src="img3.jpg" srcset="img3.jpg 2x">
+        </section>
+        <aside class="right-side">
+            <h4>사이드바</h4>
+        </aside>
+        <footer id="footer">
+            <h4>푸터</h4>
+        </footer>
+    </div>
+</body>
+</html>

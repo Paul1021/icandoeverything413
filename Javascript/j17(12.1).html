@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var myVar = 100; //전역 변수
+        // test();
+        // document.write(myVar);
+
+        // function test(){
+        //     // var myVar=50; //지역 변수
+        //     myVar=50; // 전역 번수
+        // }
+
+
+        var price = prompt ("책 값을 입력하세요.");
+        var pay = count(price);
+
+        function count(a){
+            var b = a*0.9;
+            var c = b + 3000;
+            return c;
+        }
+        document.write("지불 금액은 " + pay + "원 입니다.");
+
+        var p = 26000;
+        var di = 10;
+        var sh = 3000;
+        var payy=getPay(p, di, sh);
+        document.write("지불 금액은 " + payy + "원 입니다.")
+        
+        function getPay(p, di, sh){
+            total = p - (p * (di / 100)) + sh;
+            return total;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>지불금액 계산기</h1>
+    -책값: <input id="price" type="text">원 <br />
+    -할인율: <input id="rate" type="text">% <br />
+    -배송료: <input id="delivery" type="text">원 <br />
+    -지불금액: <span id="payment"></span> 원 <br />
+    <button onclick="func1()">계산</button>
+    
+    <script>
+        function func1 () {
+            var price =  Number(document.getElementById("price").value);
+            var rate =  Number(document.getElementById("rate").value);
+            var delivery =  Number(document.getElementById("delivery").value);
+            document.getElementById("payment").innerHTML = ((price * (100 - rate) / 100) + delivery);
+        }
+    </script>
+</body>
+</html>
